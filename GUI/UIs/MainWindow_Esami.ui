@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow_Esami</class>
+ <widget class="QMainWindow" name="MainWindow_Esami">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>495</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Libretto Universitario -- Esami</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>495</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAggiungi_Esame"/>
+    <addaction name="actionRimuovi_Esame"/>
+    <addaction name="separator"/>
+    <addaction name="actionEsci"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAggiungi_Esame"/>
+   <addaction name="actionRimuovi_Esame"/>
+   <addaction name="separator"/>
+   <addaction name="actionEsci"/>
+  </widget>
+  <action name="actionAggiungi_Esame">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icons/dialog-more.png</normaloff>../Icons/dialog-more.png</iconset>
+   </property>
+   <property name="text">
+    <string>Aggiungi Esame</string>
+   </property>
+   <property name="statusTip">
+    <string>Aggiungi un esame al database</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta++</string>
+   </property>
+  </action>
+  <action name="actionRimuovi_Esame">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icons/dialog-cancel-3.png</normaloff>../Icons/dialog-cancel-3.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rimuovi Esame</string>
+   </property>
+   <property name="statusTip">
+    <string>Rimuovi l'esame selezionato dal database</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+-</string>
+   </property>
+  </action>
+  <action name="actionEsci">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Icons/application-exit.png</normaloff>../Icons/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Esci</string>
+   </property>
+   <property name="statusTip">
+    <string>Esci e torna alla finestra principale</string>
+   </property>
+   <property name="shortcut">
+    <string>Meta+Q</string>
+   </property>
+  </action>
+  <action name="actionInformazioni">
+   <property name="text">
+    <string>Informazioni</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionEsci</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow_Esami</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

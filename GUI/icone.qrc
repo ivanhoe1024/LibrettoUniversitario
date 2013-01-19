@@ -1,0 +1,15 @@
+<RCC>
+  <qresource>
+    <file>..\Icons\application.png</file>
+    <file>..\Icons\application-exit.png</file>
+    <file>..\Icons\applications-education.png</file>
+    
+    <file>..\Icons\dialog-apply.png</file>
+    <file>..\Icons\dialog-cancel-3.png</file>
+    <file>..\Icons\dialog-more.png</file>
+    <file>..\Icons\edit-clear-3.png</file>
+    <file>..\Icons\information.png</file>
+    <file>..\Icons\mod1.png</file>
+    <file>..\Icons\statistiche.png</file>
+  </qresource>
+</RCC>
